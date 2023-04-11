@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<transport>
+  <auto name="Грузовик МАЗ-500">
+    <engine power="180 л/с">
+      <capacity>11150 см.куб.</capacity>
+      <type>дизельный</type>
+      <serial_number>В01234567</serial_number>
+    </engine>
+    <transmission type="механическая">
+      <gear>5</gear>
+      <manufacturer>ЯМЗ</manufacturer>
+    </transmission>
+    <chassis weels="4">
+      <number>0123456</number>
+      <load>10 т</load>
+    </chassis>
+  </auto>
+  <auto name="Автобус А092 &quot;Богдан&quot;">
+    <engine power="121 л/с">
+      <capacity>4570 см.куб.</capacity>
+      <type>дизельный с турбо-наддувом</type>
+      <serial_number>N01234567</serial_number>
+    </engine>
+    <transmission type="механическая, синхронизированная">
+      <gear>4</gear>
+      <manufacturer>ISUZU</manufacturer>
+    </transmission>
+    <chassis weels="4">
+      <number>0123456</number>
+      <load>8 т</load>
+    </chassis>
+  </auto>
+</transport>
