@@ -30,4 +30,19 @@
       <load>8 т</load>
     </chassis>
   </auto>
+  <auto name="Скутер Vespa Primavera 150">
+    <engine power="180 л/с">
+      <capacity>11150 см.куб.</capacity>
+      <type>бензиновый</type>
+      <serial_number>01234</serial_number>
+    </engine>
+    <transmission type="механическая">
+      <gear>4</gear>
+      <manufacturer>Vespa</manufacturer>
+    </transmission>
+    <chassis weels="2">
+      <number>012345</number>
+      <load>150 т</load>
+    </chassis>
+  </auto>
 </transport>

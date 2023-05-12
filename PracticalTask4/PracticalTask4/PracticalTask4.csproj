@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PracticalTask2Library\PracticalTask2Library.csproj" />
+    <ProjectReference Include="..\PraciticalTask2Lib\PraciticalTask2Lib.csproj" />
   </ItemGroup>
 
 </Project>

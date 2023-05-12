@@ -11,7 +11,7 @@
       <manufacturer>ВАЗ</manufacturer>
     </transmission>
     <chassis weels="4">
-      <number>ХТА210500</number>
+      <number>XTA210500</number>
       <load>400 кг</load>
     </chassis>
   </auto>
@@ -31,8 +31,8 @@
     </chassis>
   </auto>
   <auto name="Скутер Vespa Primavera 150">
-    <engine power="12 л/с">
-      <capacity>155 см.куб.</capacity>
+    <engine power="180 л/с">
+      <capacity>11150 см.куб.</capacity>
       <type>бензиновый</type>
       <serial_number>01234</serial_number>
     </engine>
@@ -42,7 +42,7 @@
     </transmission>
     <chassis weels="2">
       <number>012345</number>
-      <load>150 кг</load>
+      <load>150 т</load>
     </chassis>
   </auto>
   <auto name="Автобус А092 &quot;Богдан&quot;">
@@ -58,6 +58,21 @@
     <chassis weels="4">
       <number>0123456</number>
       <load>8 т</load>
+    </chassis>
+  </auto>
+  <auto name="Легковой автомобиль Автомобиль">
+    <engine power="1 л/с">
+      <capacity>1 см.куб.</capacity>
+      <type>тип</type>
+      <serial_number>1</serial_number>
+    </engine>
+    <transmission type="тип">
+      <gear>1</gear>
+      <manufacturer>производитель</manufacturer>
+    </transmission>
+    <chassis weels="1">
+      <number>1</number>
+      <load>1000 кг</load>
     </chassis>
   </auto>
 </transport>

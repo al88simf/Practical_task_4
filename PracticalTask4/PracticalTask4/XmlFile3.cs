@@ -1,4 +1,9 @@
-﻿using PracticalTask2Library;
+﻿using PraciticalTask2Lib;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace PracticalTask4
@@ -40,11 +45,9 @@ namespace PracticalTask4
         /// </remarks>
         /// <param name="xRoot">Объект класса XElement</param>
         /// <param name="engine">Выбранный транспорт.</param>
-        /// <param name="nameAttr">Атрибут "название транспорта".</param>
         /// <param name="suffix">Мера нагрузки.</param>
         public override void AddElement(XElement xRoot,
-                                        Engine engine,
-                                        string nameAttr, 
+                                        Transport transport,
                                         string suffix)
         { }
 

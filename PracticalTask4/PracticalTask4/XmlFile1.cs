@@ -1,4 +1,9 @@
-﻿using PracticalTask2Library;
+﻿using PraciticalTask2Lib;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace PracticalTask4
@@ -37,42 +42,43 @@ namespace PracticalTask4
         /// добавляет элемент, соответствующий этому транспорту в файл.
         /// </summary>
         /// <param name="xRoot">Объект класса XElement</param>
-        /// <param name="engine">Выбранный транспорт.</param>
-        /// <param name="nameAttr">Атрибут "название транспорта".</param>
+        /// <param name="transport">Выбранный транспорт.</param>
         /// <param name="suffix">Мера нагрузки.</param>
         public override void AddElement(XElement xRoot,
-                                        Engine engine,
-                                        string nameAttr, 
+                                        Transport transport,
                                         string suffix)
         {
             // Метод вызывается как при заполнении первого файла, так и для 
             // третьего в силу его универсальности.
-            Transmission? transm = engine as Transmission;
-            Chassis? chassis = engine as Chassis;
 
             // Добавление атрибутов и вложенных элементов.
-            XElement autoElem = new("auto", 
-                new XAttribute("name", nameAttr),
-                new XElement("engine", 
-                    new XAttribute("power", $"{engine.Power} л/с"),
-                    new XElement("capacity", $"{engine.Capacity} см.куб."),
-                    new XElement("type", $"{engine.Type}"),
-                    new XElement("serial_number", $"{engine.SerialNumber}")),
+            XElement autoElem = new("auto",
+                new XAttribute("name", transport?.Name),
+                new XElement("engine",
+                    new XAttribute("power", $"{transport?.Engine?.Power} л/с"),
+                    new XElement("capacity",
+                                 $"{transport?.Engine?.Capacity} см.куб."),
+                    new XElement("type", $"{transport?.Engine?.Type}"),
+                    new XElement("serial_number",
+                                 $"{transport?.Engine?.SerialNumber}")),
                 new XElement("transmission",
-                    new XAttribute("type", $"{transm?.TransType}"),
-                    new XElement("gear", $"{transm?.Gear}"),
-                    new XElement("manufacturer", $"{transm?.Manufacturer}")),
+                    new XAttribute("type", $"{transport?.Transmission?.Type}"),
+                    new XElement("gear", $"{transport?.Transmission?.Gear}"),
+                    new XElement("manufacturer",
+                                 $"{transport?.Transmission?.Manufacturer}")),
                 new XElement("chassis",
-                    new XAttribute("weels", $"{chassis?.Weels}"),
-                    new XElement("number", $"{chassis?.Number}"),
-                    new XElement("load", $"{chassis?.Load} {suffix}")));
+                    new XAttribute("weels", $"{transport?.Chassis?.Weels}"),
+                    new XElement("number", $"{transport?.Chassis?.Number}"),
+                    new XElement("load",
+                                 $"{transport?.Chassis?.Load} {suffix}")));
 
             // Добавление в корневой элемент.
             xRoot.Add(autoElem);
 
             // Сообщение о выполненном действии.
             Notify?.Invoke(this,
-                           new($"Xml файл \"{Name}\": добавлен элемент \"{nameAttr}\""));
+                           new($"Xml файл \"{Name}\": добавлен элемент "
+                               + $"\"{transport?.Name}\""));
         }
     }
 }

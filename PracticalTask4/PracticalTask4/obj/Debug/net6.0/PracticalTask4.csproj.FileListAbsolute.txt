@@ -1,14 +1,10 @@
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask4.exe
-C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\Chassis.cs
-C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\Engine.cs
-C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\Program.cs
-C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\Transmission.cs
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask4.deps.json
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask4.runtimeconfig.json
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask4.dll
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask4.pdb
-C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask2Library.dll
-C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PracticalTask2Library.pdb
+C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PraciticalTask2Lib.dll
+C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\bin\Debug\net6.0\PraciticalTask2Lib.pdb
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\obj\Debug\net6.0\PracticalTask4.csproj.AssemblyReference.cache
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\obj\Debug\net6.0\PracticalTask4.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\al198\source\repos\PracticalTask4\PracticalTask4\obj\Debug\net6.0\PracticalTask4.AssemblyInfoInputs.cache

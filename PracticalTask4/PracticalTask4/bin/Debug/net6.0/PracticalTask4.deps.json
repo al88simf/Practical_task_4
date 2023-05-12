@@ -8,15 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "PracticalTask4/1.0.0": {
         "dependencies": {
-          "PracticalTask2Library": "1.0.0"
+          "PraciticalTask2Lib": "1.0.0"
         },
         "runtime": {
           "PracticalTask4.dll": {}
         }
       },
-      "PracticalTask2Library/1.0.0": {
+      "PraciticalTask2Lib/1.0.0": {
         "runtime": {
-          "PracticalTask2Library.dll": {}
+          "PraciticalTask2Lib.dll": {}
         }
       }
     }
@@ -27,7 +27,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "PracticalTask2Library/1.0.0": {
+    "PraciticalTask2Lib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

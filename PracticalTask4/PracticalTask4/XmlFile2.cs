@@ -1,4 +1,9 @@
-﻿using PracticalTask2Library;
+﻿using PraciticalTask2Lib;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace PracticalTask4
@@ -36,29 +41,30 @@ namespace PracticalTask4
         /// добавляет элемент, соответствующий этому транспорту в файл.
         /// </summary>
         /// <param name="xRoot">Объект класса XElement.</param>
-        /// <param name="engine">Выбранный транспорт.</param>
-        /// <param name="nameAttr">Атрибут "название транспорта".</param>
+        /// <param name="transport">Выбранный транспорт.</param>
         /// <param name="suffix">Мера нагрузки.</param>
         public override void AddElement(XElement xRoot,
-                                        Engine engine,
-                                        string nameAttr, 
+                                        Transport transport,
                                         string suffix)
         {
             // Добавление атрибутов и вложенных элементов.
             XElement autoElem = new("auto",
-                new XAttribute("name", nameAttr),
+                new XAttribute("name", transport?.Name),
                 new XElement("engine",
-                    new XAttribute("power", $"{engine.Power} л/с"),
-                    new XElement("capacity", $"{engine.Capacity} см.куб."),
-                    new XElement("type", $"{engine.Type}"),
-                    new XElement("serial_number", $"{engine.SerialNumber}")));
+                    new XAttribute("power", $"{transport?.Engine?.Power} л/с"),
+                    new XElement("capacity",
+                                 $"{transport?.Engine?.Capacity} см.куб."),
+                    new XElement("type", $"{transport?.Engine?.Type}"),
+                    new XElement("serial_number",
+                                 $"{transport?.Engine?.SerialNumber}")));
 
             // Добавление в корневой элемент.
             xRoot.Add(autoElem);
 
             // Сообщение о выполненном действии.
             Notify?.Invoke(this,
-                           new($"Xml файл \"{Name}\": добавлен элемент \"{nameAttr}\""));
+                           new($"Xml файл \"{Name}\": добавлен элемент "
+                               + $"\"{transport?.Name}\""));
         }
     }
 }

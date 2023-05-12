@@ -1,8 +1,11 @@
-﻿namespace PracticalTask4
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PracticalTask4
 {
-    /// <summary>
-    /// Класс представляет аргументы для события.
-    /// </summary>
     class XmlFileEventArgs
     {
         /// <summary>

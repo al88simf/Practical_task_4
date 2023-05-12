@@ -1,4 +1,9 @@
-﻿using PracticalTask2Library;
+﻿using PraciticalTask2Lib;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace PracticalTask4
@@ -15,7 +20,7 @@ namespace PracticalTask4
         /// Абстрактное свойство Name.
         /// </summary>
         public abstract string? Name { get; set; }
-
+        
         /// <summary>
         /// Конструктор класса.
         /// </summary>
@@ -30,7 +35,6 @@ namespace PracticalTask4
         /// </remarks>
         public abstract event Action<XmlFile, XmlFileEventArgs>? Notify;
 
-        
         /// <summary>
         /// Абстрактный метод.
         /// </summary>
@@ -39,12 +43,10 @@ namespace PracticalTask4
         /// добавляет элемент, соответствующий этому транспорту в файл.
         /// </remarks>
         /// <param name="xRoot">Объект класса XElement.</param>
-        /// <param name="engine">Выбранный транспорт.</param>
-        /// <param name="nameAttr">Атрибут "название транспорта".</param>
+        /// <param name="transport">Выбранный транспорт.</param>
         /// <param name="suffix">Мера нагрузки.</param>
         public abstract void AddElement(XElement xRoot,
-                                        Engine engine,
-                                        string nameAttr, 
+                                        Transport transport,
                                         string suffix);
     }
 }
